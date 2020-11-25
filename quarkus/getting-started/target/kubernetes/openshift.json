@@ -3,9 +3,9 @@
   "kind" : "Service",
   "metadata" : {
     "annotations" : {
-      "app.quarkus.io/build-timestamp" : "2020-11-25 - 16:30:51 +0000",
+      "app.quarkus.io/build-timestamp" : "2020-11-25 - 16:57:45 +0000",
       "app.openshift.io/vcs-url" : "https://github.com/Samuel-Antequera/risk-seekers-hackaton.git",
-      "app.quarkus.io/commit-id" : "b3e2bad7ff58742a0590c80b63ba94c6a2d831cd",
+      "app.quarkus.io/commit-id" : "41ac87355802fb14c34713b0b8bf096f081e48fd",
       "app.quarkus.io/vcs-url" : "https://github.com/Samuel-Antequera/risk-seekers-hackaton.git"
     },
     "labels" : {
@@ -32,9 +32,9 @@
   "kind" : "ImageStream",
   "metadata" : {
     "annotations" : {
-      "app.quarkus.io/build-timestamp" : "2020-11-25 - 16:30:51 +0000",
+      "app.quarkus.io/build-timestamp" : "2020-11-25 - 16:57:45 +0000",
       "app.openshift.io/vcs-url" : "https://github.com/Samuel-Antequera/risk-seekers-hackaton.git",
-      "app.quarkus.io/commit-id" : "b3e2bad7ff58742a0590c80b63ba94c6a2d831cd",
+      "app.quarkus.io/commit-id" : "41ac87355802fb14c34713b0b8bf096f081e48fd",
       "app.quarkus.io/vcs-url" : "https://github.com/Samuel-Antequera/risk-seekers-hackaton.git"
     },
     "labels" : {
@@ -50,9 +50,9 @@
   "kind" : "ImageStream",
   "metadata" : {
     "annotations" : {
-      "app.quarkus.io/build-timestamp" : "2020-11-25 - 16:30:51 +0000",
+      "app.quarkus.io/build-timestamp" : "2020-11-25 - 16:57:45 +0000",
       "app.openshift.io/vcs-url" : "https://github.com/Samuel-Antequera/risk-seekers-hackaton.git",
-      "app.quarkus.io/commit-id" : "b3e2bad7ff58742a0590c80b63ba94c6a2d831cd",
+      "app.quarkus.io/commit-id" : "41ac87355802fb14c34713b0b8bf096f081e48fd",
       "app.quarkus.io/vcs-url" : "https://github.com/Samuel-Antequera/risk-seekers-hackaton.git"
     },
     "labels" : {
@@ -70,9 +70,9 @@
   "kind" : "BuildConfig",
   "metadata" : {
     "annotations" : {
-      "app.quarkus.io/build-timestamp" : "2020-11-25 - 16:30:51 +0000",
+      "app.quarkus.io/build-timestamp" : "2020-11-25 - 16:57:45 +0000",
       "app.openshift.io/vcs-url" : "https://github.com/Samuel-Antequera/risk-seekers-hackaton.git",
-      "app.quarkus.io/commit-id" : "b3e2bad7ff58742a0590c80b63ba94c6a2d831cd",
+      "app.quarkus.io/commit-id" : "41ac87355802fb14c34713b0b8bf096f081e48fd",
       "app.quarkus.io/vcs-url" : "https://github.com/Samuel-Antequera/risk-seekers-hackaton.git"
     },
     "labels" : {
@@ -106,9 +106,9 @@
   "kind" : "DeploymentConfig",
   "metadata" : {
     "annotations" : {
-      "app.quarkus.io/build-timestamp" : "2020-11-25 - 16:30:51 +0000",
+      "app.quarkus.io/build-timestamp" : "2020-11-25 - 16:57:45 +0000",
       "app.openshift.io/vcs-url" : "https://github.com/Samuel-Antequera/risk-seekers-hackaton.git",
-      "app.quarkus.io/commit-id" : "b3e2bad7ff58742a0590c80b63ba94c6a2d831cd",
+      "app.quarkus.io/commit-id" : "41ac87355802fb14c34713b0b8bf096f081e48fd",
       "app.quarkus.io/vcs-url" : "https://github.com/Samuel-Antequera/risk-seekers-hackaton.git"
     },
     "labels" : {
@@ -127,9 +127,9 @@
     "template" : {
       "metadata" : {
         "annotations" : {
-          "app.quarkus.io/build-timestamp" : "2020-11-25 - 16:30:51 +0000",
+          "app.quarkus.io/build-timestamp" : "2020-11-25 - 16:57:45 +0000",
           "app.openshift.io/vcs-url" : "https://github.com/Samuel-Antequera/risk-seekers-hackaton.git",
-          "app.quarkus.io/commit-id" : "b3e2bad7ff58742a0590c80b63ba94c6a2d831cd",
+          "app.quarkus.io/commit-id" : "41ac87355802fb14c34713b0b8bf096f081e48fd",
           "app.quarkus.io/vcs-url" : "https://github.com/Samuel-Antequera/risk-seekers-hackaton.git"
         },
         "labels" : {
@@ -184,9 +184,9 @@
   "kind" : "Route",
   "metadata" : {
     "annotations" : {
-      "app.quarkus.io/build-timestamp" : "2020-11-25 - 16:30:51 +0000",
+      "app.quarkus.io/build-timestamp" : "2020-11-25 - 16:57:45 +0000",
       "app.openshift.io/vcs-url" : "https://github.com/Samuel-Antequera/risk-seekers-hackaton.git",
-      "app.quarkus.io/commit-id" : "b3e2bad7ff58742a0590c80b63ba94c6a2d831cd",
+      "app.quarkus.io/commit-id" : "41ac87355802fb14c34713b0b8bf096f081e48fd",
       "app.quarkus.io/vcs-url" : "https://github.com/Samuel-Antequera/risk-seekers-hackaton.git"
     },
     "labels" : {
