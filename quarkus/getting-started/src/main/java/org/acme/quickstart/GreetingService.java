@@ -8,7 +8,7 @@ public class GreetingService {
     private String hostname = System.getenv().getOrDefault("HOSTNAME", "unknown");
 
     public String greeting(String name) {
-        return "hello " + name + " from " + hostname;
+        return "hasta luego " + name + " from " + hostname;
     }
 
 }

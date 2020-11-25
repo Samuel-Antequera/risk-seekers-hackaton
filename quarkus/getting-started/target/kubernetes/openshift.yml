@@ -3,9 +3,9 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    app.quarkus.io/build-timestamp: 2020-11-25 - 15:25:14 +0000
+    app.quarkus.io/build-timestamp: 2020-11-25 - 16:30:51 +0000
     app.openshift.io/vcs-url: https://github.com/Samuel-Antequera/risk-seekers-hackaton.git
-    app.quarkus.io/commit-id: 4d3a8cb4da893cdebd43c6cbcd8bd351e0c8d3d3
+    app.quarkus.io/commit-id: b3e2bad7ff58742a0590c80b63ba94c6a2d831cd
     app.quarkus.io/vcs-url: https://github.com/Samuel-Antequera/risk-seekers-hackaton.git
   labels:
     app.kubernetes.io/name: getting-started
@@ -26,9 +26,9 @@ apiVersion: image.openshift.io/v1
 kind: ImageStream
 metadata:
   annotations:
-    app.quarkus.io/build-timestamp: 2020-11-25 - 15:25:14 +0000
+    app.quarkus.io/build-timestamp: 2020-11-25 - 16:30:51 +0000
     app.openshift.io/vcs-url: https://github.com/Samuel-Antequera/risk-seekers-hackaton.git
-    app.quarkus.io/commit-id: 4d3a8cb4da893cdebd43c6cbcd8bd351e0c8d3d3
+    app.quarkus.io/commit-id: b3e2bad7ff58742a0590c80b63ba94c6a2d831cd
     app.quarkus.io/vcs-url: https://github.com/Samuel-Antequera/risk-seekers-hackaton.git
   labels:
     app.kubernetes.io/version: 1.0-SNAPSHOT
@@ -41,9 +41,9 @@ apiVersion: image.openshift.io/v1
 kind: ImageStream
 metadata:
   annotations:
-    app.quarkus.io/build-timestamp: 2020-11-25 - 15:25:14 +0000
+    app.quarkus.io/build-timestamp: 2020-11-25 - 16:30:51 +0000
     app.openshift.io/vcs-url: https://github.com/Samuel-Antequera/risk-seekers-hackaton.git
-    app.quarkus.io/commit-id: 4d3a8cb4da893cdebd43c6cbcd8bd351e0c8d3d3
+    app.quarkus.io/commit-id: b3e2bad7ff58742a0590c80b63ba94c6a2d831cd
     app.quarkus.io/vcs-url: https://github.com/Samuel-Antequera/risk-seekers-hackaton.git
   labels:
     app.kubernetes.io/version: 1.0-SNAPSHOT
@@ -57,9 +57,9 @@ apiVersion: build.openshift.io/v1
 kind: BuildConfig
 metadata:
   annotations:
-    app.quarkus.io/build-timestamp: 2020-11-25 - 15:25:14 +0000
+    app.quarkus.io/build-timestamp: 2020-11-25 - 16:30:51 +0000
     app.openshift.io/vcs-url: https://github.com/Samuel-Antequera/risk-seekers-hackaton.git
-    app.quarkus.io/commit-id: 4d3a8cb4da893cdebd43c6cbcd8bd351e0c8d3d3
+    app.quarkus.io/commit-id: b3e2bad7ff58742a0590c80b63ba94c6a2d831cd
     app.quarkus.io/vcs-url: https://github.com/Samuel-Antequera/risk-seekers-hackaton.git
   labels:
     app.kubernetes.io/version: 1.0-SNAPSHOT
@@ -83,9 +83,9 @@ apiVersion: apps.openshift.io/v1
 kind: DeploymentConfig
 metadata:
   annotations:
-    app.quarkus.io/build-timestamp: 2020-11-25 - 15:25:14 +0000
+    app.quarkus.io/build-timestamp: 2020-11-25 - 16:30:51 +0000
     app.openshift.io/vcs-url: https://github.com/Samuel-Antequera/risk-seekers-hackaton.git
-    app.quarkus.io/commit-id: 4d3a8cb4da893cdebd43c6cbcd8bd351e0c8d3d3
+    app.quarkus.io/commit-id: b3e2bad7ff58742a0590c80b63ba94c6a2d831cd
     app.quarkus.io/vcs-url: https://github.com/Samuel-Antequera/risk-seekers-hackaton.git
   labels:
     app.kubernetes.io/version: 1.0-SNAPSHOT
@@ -100,9 +100,9 @@ spec:
   template:
     metadata:
       annotations:
-        app.quarkus.io/build-timestamp: 2020-11-25 - 15:25:14 +0000
+        app.quarkus.io/build-timestamp: 2020-11-25 - 16:30:51 +0000
         app.openshift.io/vcs-url: https://github.com/Samuel-Antequera/risk-seekers-hackaton.git
-        app.quarkus.io/commit-id: 4d3a8cb4da893cdebd43c6cbcd8bd351e0c8d3d3
+        app.quarkus.io/commit-id: b3e2bad7ff58742a0590c80b63ba94c6a2d831cd
         app.quarkus.io/vcs-url: https://github.com/Samuel-Antequera/risk-seekers-hackaton.git
       labels:
         app.kubernetes.io/version: 1.0-SNAPSHOT
@@ -144,3 +144,25 @@ spec:
         kind: ImageStreamTag
         name: getting-started:1.0-SNAPSHOT
     type: ImageChange
+---
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  annotations:
+    app.quarkus.io/build-timestamp: 2020-11-25 - 16:30:51 +0000
+    app.openshift.io/vcs-url: https://github.com/Samuel-Antequera/risk-seekers-hackaton.git
+    app.quarkus.io/commit-id: b3e2bad7ff58742a0590c80b63ba94c6a2d831cd
+    app.quarkus.io/vcs-url: https://github.com/Samuel-Antequera/risk-seekers-hackaton.git
+  labels:
+    app.kubernetes.io/name: getting-started
+    app.kubernetes.io/version: 1.0-SNAPSHOT
+    app.openshift.io/runtime: quarkus
+  name: getting-started
+spec:
+  host: ""
+  path: /
+  port:
+    targetPort: 8080
+  to:
+    kind: Service
+    name: getting-started
