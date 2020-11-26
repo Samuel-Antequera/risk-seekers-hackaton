@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "USERS")
+@Table(name = "users", schema = "wise_wallet")
 public class User implements Serializable {
 
 	private static final long serialVersionUID = 2287622954105560619L;
@@ -24,7 +24,7 @@ public class User implements Serializable {
 	@Id
 	@GeneratedValue
     @Column(name = "id")
-	private String id;
+	private Integer id;
 
 	@Column(name = "name")
 	private String name;
@@ -42,6 +42,6 @@ public class User implements Serializable {
 	private String phone;
 	
 	@Column(name = "score")
-	private Integer score;
+	private Float score;
 
 }

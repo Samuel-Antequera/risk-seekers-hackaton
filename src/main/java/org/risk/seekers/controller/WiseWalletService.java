@@ -18,5 +18,7 @@ public class WiseWalletService {
         em.persist(user);
         return user;
     }
+    
+    
 
 }
