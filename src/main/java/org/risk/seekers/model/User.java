@@ -29,8 +29,11 @@ public class User implements Serializable {
 	@Column(name = "name")
 	private String name;
 	
-	@Column(name = "surname")
-	private String surname;
+	@Column(name = "firstname")
+	private String firstName;
+	
+	@Column(name = "secondname")
+	private String secondName;
 	
 	@Column(name = "age")
 	private Integer age;

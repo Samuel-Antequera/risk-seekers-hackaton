@@ -34,15 +34,15 @@ public class WiseWalletResource {
 	@Path("/users")
 	public Response listUsers() {
 		List<User> users = new ArrayList<>();
-		users.add(new User(1, "Samuel", "Antequera", 12, "samuel@protonmail.com", "6300685", 50f));
-		users.add(new User(2, "Pepe", "Chocolatero", 7, "pepe@protonmail.com", "63006853", 500f));
+		users.add(new User(1, "Samuel", "Antequera", "Cabornero", 12, "samuel@protonmail.com", "6300685", 50f));
+		users.add(new User(2, "Pepe", "Chocolatero",  "Cabornero", 7, "pepe@protonmail.com", "63006853", 500f));
 		return Response.ok(users).build();
 	}
 
 	@GET
 	@Path("/users/{user.id}")
 	public Response getUser(@PathParam("user.id") String userId) {
-		User samuel = new User(1, "Samuel", "Antequera", 12, "samuel@protonmail.com", "6300685", 50f);
+		User samuel = new User(1, "Samuel", "Antequera", "Cabornero", 12, "samuel@protonmail.com", "6300685", 50f);
 		return Response.ok(samuel).build();
 	}
 	
