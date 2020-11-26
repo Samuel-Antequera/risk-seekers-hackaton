@@ -31,15 +31,16 @@ public class GreetingResource {
 	@Path("/users")
 	public Response listUsers() {
 		List<User> users = new ArrayList<>();
-		users.add(new User());
-		users.add(new User());
+		users.add(new User("1", "Samuel", "Antequera", 12, "samuel@protonmail.com", "6300685", 50));
+		users.add(new User("2", "Pepe", "Chocolatero", 7, "pepe@protonmail.com", "63006853", 500));
 		return Response.ok(users).build();
 	}
 
 	@GET
 	@Path("/users/{user.id}")
 	public Response getUser(@PathParam("user.id") String userId) {
-		return Response.ok(new User()).build();
+		User samuel = new User("1", "Samuel", "Antequera", 12, "samuel@protonmail.com", "6300685", 50);
+		return Response.ok(samuel).build();
 	}
 	
 	@POST

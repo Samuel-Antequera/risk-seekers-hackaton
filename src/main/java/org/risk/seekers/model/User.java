@@ -6,9 +6,13 @@ import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class User implements Serializable {
 
 	private static final long serialVersionUID = 2287622954105560619L;
@@ -21,10 +25,9 @@ public class User implements Serializable {
 	@NotEmpty
 	private String surname;
 	
-	@NotEmpty
 	@Min(value = 6)
 	@Max(value = 18)
-	private int age;
+	private Integer age;
 	
 	@NotEmpty
 	private String mail;
@@ -32,7 +35,6 @@ public class User implements Serializable {
 	@NotEmpty
 	private String phone;
 	
-	@NotEmpty
-	private int score;
+	private Integer score;
 
 }

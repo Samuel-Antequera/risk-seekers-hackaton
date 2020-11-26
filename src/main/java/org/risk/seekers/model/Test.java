@@ -5,9 +5,13 @@ import java.util.Map;
 
 import javax.validation.constraints.NotEmpty;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Test implements Serializable {
 
 	private static final long serialVersionUID = -860767149376516444L;

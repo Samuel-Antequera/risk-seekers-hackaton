@@ -5,9 +5,13 @@ import java.math.BigDecimal;
 
 import javax.validation.constraints.NotEmpty;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Product implements Serializable {
 
 	private static final long serialVersionUID = -4924982350014423150L;
