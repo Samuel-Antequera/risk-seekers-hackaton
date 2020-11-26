@@ -9,16 +9,17 @@ import org.risk.seekers.model.User;
 
 @ApplicationScoped
 public class WiseWalletService {
-	
-	@Inject
-    EntityManager em; 
 
-    @Transactional 
-    public User createGift(User user) {
-        em.persist(user);
-        return user;
-    }
-    
-    
+	@Inject
+	EntityManager em;
+
+	@Transactional
+	public User createGift(User user) {
+		em.getTransaction().begin();
+		em.persist(user); // em.merge(u); for updates
+		em.getTransaction().commit();
+		em.close();
+		return user;
+	}
 
 }
