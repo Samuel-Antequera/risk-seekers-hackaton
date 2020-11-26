@@ -5,7 +5,7 @@ import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
 
-import org.risk.seekers.model.User;
+import org.risk.seekers.model.WiseUser;
 
 @ApplicationScoped
 public class WiseWalletService {
@@ -14,11 +14,8 @@ public class WiseWalletService {
 	EntityManager em;
 
 	@Transactional
-	public User createGift(User user) {
-		em.getTransaction().begin();
-		em.persist(user); // em.merge(u); for updates
-		em.getTransaction().commit();
-		em.close();
+	public WiseUser createWiseUser(WiseUser user) {
+		em.persist(user);
 		return user;
 	}
 
