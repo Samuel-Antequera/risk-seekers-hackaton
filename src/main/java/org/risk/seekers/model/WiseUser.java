@@ -15,7 +15,7 @@ public class WiseUser extends PanacheEntity {
     public int age;
     public String mail;
     public String phone;
-    public float socre; 
+    public float score; 
 
     public static List<WiseUser> getAllWiseUsers(String wiseUser) {
         return find("wiseUser", wiseUser).list();
