@@ -16,8 +16,6 @@ public class Result implements Serializable {
 	private static final long serialVersionUID = 5035059695663597921L;
 
 	private String id;
-	
-	@NotEmpty
 	private Integer result;
 
 }
