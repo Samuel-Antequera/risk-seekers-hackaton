@@ -47,11 +47,11 @@ public class User implements Serializable {
 	private String mail;
 	
 	@NotEmpty
-	@Column(name = "score")
+	@Column(name = "phone")
 	private String phone;
 	
 	@NotEmpty
-	@Column(name = "first_name")
+	@Column(name = "score")
 	private Integer score;
 
 }
