@@ -1,0 +1,9 @@
+org\risk\seekers\model\ProductType.class
+org\risk\seekers\model\Result.class
+org\risk\seekers\model\WiseUser.class
+org\risk\seekers\controller\WiseWalletService.class
+org\risk\seekers\model\Event.class
+org\risk\seekers\model\Product.class
+META-INF\panache-archive.marker
+org\risk\seekers\controller\WiseWalletResource.class
+org\risk\seekers\model\Test.class
