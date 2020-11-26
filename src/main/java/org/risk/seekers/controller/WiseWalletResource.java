@@ -21,7 +21,7 @@ import org.risk.seekers.model.User;
 @Path("/wise-wallet")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
-public class GreetingResource {
+public class WiseWalletResource {
 	
 	@Inject
 	Validator validator;
