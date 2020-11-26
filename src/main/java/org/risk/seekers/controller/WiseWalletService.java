@@ -14,8 +14,9 @@ public class WiseWalletService {
     EntityManager em; 
 
     @Transactional 
-    public void createGift(User user) {
+    public User createGift(User user) {
         em.persist(user);
+        return user;
     }
 
 }

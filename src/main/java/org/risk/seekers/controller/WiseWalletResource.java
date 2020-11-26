@@ -25,6 +25,9 @@ public class WiseWalletResource {
 	
 	@Inject
 	Validator validator;
+	
+	@Inject
+	WiseWalletService service;
 
 
 	@GET
@@ -48,7 +51,8 @@ public class WiseWalletResource {
 	public Response createUser(User user) {
 		 Set<ConstraintViolation<User>> violations = validator.validate(user);
 		    if (violations.isEmpty()) {
-		        return Response.status(Response.Status.CREATED).header("location", user).build();
+		    	User created = service.createGift(user);
+		        return Response.status(Response.Status.CREATED).header("location", "/wise-wallet/users/" + created.getId()).build();
 		    } else {
 		        return Response.status(Response.Status.BAD_REQUEST).build();
 		    }
