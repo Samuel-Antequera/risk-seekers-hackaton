@@ -24,6 +24,7 @@ public class WiseWalletResource {
 	Logger logger = Logger.getLogger(WiseWalletResource.class);
 
 	@GET
+	@Path("/users")
 	public List<WiseUser> allFruits() {
 		return WiseUser.listAll();
 	}
