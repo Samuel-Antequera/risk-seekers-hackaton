@@ -19,6 +19,8 @@ import javax.ws.rs.core.Response;
 import org.risk.seekers.model.User;
 
 @Path("/wise-wallet")
+@Produces(MediaType.APPLICATION_JSON)
+@Consumes(MediaType.APPLICATION_JSON)
 public class GreetingResource {
 	
 	@Inject
@@ -26,8 +28,6 @@ public class GreetingResource {
 
 
 	@GET
-	@Produces(MediaType.APPLICATION_JSON)
-	@Consumes(MediaType.APPLICATION_JSON)
 	@Path("/users")
 	public Response listUsers() {
 		List<User> users = new ArrayList<>();
@@ -38,16 +38,12 @@ public class GreetingResource {
 
 	@GET
 	@Path("/users/{user.id}")
-	@Produces(MediaType.APPLICATION_JSON)
-	@Consumes(MediaType.APPLICATION_JSON)
 	public Response getUser(@PathParam("user.id") String userId) {
 		return Response.ok(new User()).build();
 	}
 	
 	@POST
 	@Path("/users")
-	@Produces(MediaType.APPLICATION_JSON)
-	@Consumes(MediaType.APPLICATION_JSON)
 	public Response createUser(User user) {
 		 Set<ConstraintViolation<User>> violations = validator.validate(user);
 		    if (violations.isEmpty()) {
